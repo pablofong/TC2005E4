@@ -135,15 +135,21 @@ footer {
   padding: 2px 15px;
 }
 
-.grid {
+.grid-form{
   list-style: none;
   margin: 0;
-  /* background-color: red; */
   display: grid;
   grid-template-columns: 1fr 2fr;
   gap: 2em;
 }
 
+.grid-button{
+  list-style: none;
+  margin: 0;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 2em;
+}
 .grid1 {
   background-image: url(../../images/contactus-pic.jpg);
   background-size: cover;
@@ -180,7 +186,56 @@ form{
   /* background-color: red; */
 }
 
+
+
+button {
+  margin: 2em;
+  background-color: white;
+  color: black;
+  border: 2px solid black;
+  border-radius: 5px;
+  padding: 10px 20px;
+}
+
+button:hover {
+  background-color: #f14764;
+  color: black;
+  border-color: #f14764;
+}
+
+button:active {
+  background-color: black;
+  color: white;
+  border-color: #f14764;
+}
+
+button:focus {
+  background-color: white;
+  color: black;
+  border-color: #f14764;
+  outline: none;
+}
+
+#category-select {
+  width: 96%;
+  height: 3em;
+}
+
+input{
+  width: 90%;
+  height: 3em;
+}
 textarea{
-  width: none;
+  width: 95%;
   resize: none;
+}
+
+.button-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+p{
+  margin-block-start: 0em;
 }
