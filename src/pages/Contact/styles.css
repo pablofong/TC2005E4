@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=Roboto:wght@900&display=swap');
 /* header,
 body,
 footer,
@@ -50,8 +51,22 @@ body {
 
 h2,
 h3,
-h4 {
-  font-family: Noto-bold, serif;
+h4{
+  font-family: 'Oswald', sans-serif;
+}
+
+label{
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+  line-height: 2em;
+}
+
+input, 
+select, 
+textarea{
+  font-family: google-Roboto, sans-serif;
+  text-indent: 1em;
+  font-size: 10px;
 }
 
 /* Parte del logo */
@@ -118,4 +133,54 @@ h4 {
 footer {
   background-color: #d9d9d9;
   padding: 2px 15px;
+}
+
+.grid {
+  list-style: none;
+  margin: 0;
+  /* background-color: red; */
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 2em;
+}
+
+.grid1 {
+  background-image: url(../../images/contactus-pic.jpg);
+  background-size: cover;
+  background-position: center;
+}
+main{
+  padding: 0 5em;
+  margin-bottom: 1em;
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  /* background-color: red; */
+}
+
+
+.input {
+  /* background-color: purple; */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%; /* set width to 100% */
+}
+
+.text {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  /* background-color: red; */
+}
+
+textarea{
+  width: none;
+  resize: none;
 }
