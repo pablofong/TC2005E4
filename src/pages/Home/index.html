@@ -1,86 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="author" content="Equipo 3">
-    <meta name="description" content="Tarea evaluativa 2 - Página de inicio">
-    <link rel="stylesheet" href="styles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="author" content="Equipo 3" />
+    <meta name="description" content="Tarea evaluativa 2 - Página de inicio" />
+    <link rel="stylesheet" href="styles.css" />
     <title>Página de inicio</title>
-</head>
-<header>
-    <img src="../../images/logo.png" class="logo">
-    <p><strong>My company</strong></p>
-    <nav>
-        <ul>
-            <li><a href="../Home/index.html"><strong>Home</strong></a></li>
-            <li><a href="../Blog/index.html"><strong>Blog</strong></a></li>
-            <li><a href="../Contact/index.html"><strong>Contact us</strong></a></li>
-            <li><a href="../Careers/index.html"><strong>Careers</strong></a></li>
+  </head>
+
+  <header>
+    <div class="logo">
+      <img src="../../images/logo.png" />
+    </div>
+    <h2 class="pageTitle"><strong>My company</strong></h2>
+
+    <div>
+      <nav>
+        <ul class="nav-links">
+          <li>
+            <a href="../Home/index.html" class="active-tab"
+              ><strong><u>Home</u></strong></a
+            >
+          </li>
+          <li>
+            <a href="../Blog/index.html"
+              ><strong><u>Blog</u></strong></a
+            >
+          </li>
+          <li>
+            <a href="../Contact/index.html"
+              ><strong><u>Contact us</u></strong></a
+            >
+          </li>
+          <li>
+            <a href="../Careers/index.html"
+              ><strong><u>Careers</u></strong></a
+            >
+          </li>
         </ul>
-    </nav>
-</header>
+      </nav>
+    </div>
+  </header>
 
-<body>
-    <img src="../../images/banner-placeholder.jpg" alt="banner">
-    <article>
-        <h1> <strong>Solving your business challenges with design and technology</strong></h1>
-        <p>As one of the world's <strong>fastest-growing</strong> global technology services providers, we deliver
-            seamless, scalable digital solutions, embedding the <strong>right technology</strong>,
-            <strong>methodology</strong> and <strong>mindsets</strong> within our customers' organizations. Our
-            technology expertise, focus on AI and continous learning, combined with our diverse and inclusive teams,
-            allows us to deliver what you need to now, while building a roadmap to <u>your future.</u>
-        </p>
-    </article>
-
-    <article>
-        <img src="../../images/profilepic-placeholder.png" alt="profilepic-placeholder">
+  <body>
+    <div class="banner"></div>
+    <main class="grid">
+      <article>
+        <h1>
+          <strong
+            >Solving your business challenges with design and technology</strong
+          >
+        </h1>
         <p>
-            Marck Donovan<br>
-            VP ENGINEERING<br>
+          As one of the world's <strong>fastest-growing</strong> global
+          technology services providers, we deliver seamless, scalable digital
+          solutions, embedding the <strong>right technology</strong>,
+          <strong>methodology</strong> and <strong>mindsets</strong> within our
+          customers' organizations. Our technology expertise, focus on AI and
+          continous learning, combined with our diverse and inclusive teams,
+          allows us to deliver what you need to now, while building a roadmap to
+          <u>your future.</u>
         </p>
-        <small><em><sup>*</sup> The best solution in the market to solve any problem you may have.</em></small>
-    </article>
 
-    <article>
-        <img src="../../images/profilepic-placeholder.png" alt="profilepic-placeholder">
+        <img
+          src="../../images/profilepic-placeholder.png"
+          alt="profilepic-placeholder"
+        />
         <p>
-            Marck Donovan<br>
-            VP ENGINEERING<br>
+          Marck Donovan<br />
+          VP ENGINEERING<br />
         </p>
-        <small><em><sup>*</sup> The best solution in the market to solve any problem you may have.</em></small>
-    </article>
+        <small
+          ><em
+            ><sup>*</sup> The best solution in the market to solve any problem
+            you may have.</em
+          ></small
+        >
 
-    <article>
-        <img src="../../images/profilepic-placeholder.png" alt="profilepic-placeholder">
+        <img
+          src="../../images/profilepic-placeholder.png"
+          alt="profilepic-placeholder"
+        />
         <p>
-            Marck Donovan<br>
-            VP ENGINEERING<br>
+          Marck Donovan<br />
+          VP ENGINEERING<br />
         </p>
-        <small><em><sup>*</sup> The best solution in the market to solve any problem you may have.</em></small>
-    </article>
+        <small
+          ><em
+            ><sup>*</sup> The best solution in the market to solve any problem
+            you may have.</em
+          ></small
+        >
+        <img
+          src="../../images/profilepic-placeholder.png"
+          alt="profilepic-placeholder"
+        />
+        <p>
+          Marck Donovan<br />
+          VP ENGINEERING<br />
+        </p>
+        <small
+          ><em
+            ><sup>*</sup> The best solution in the market to solve any problem
+            you may have.</em
+          ></small
+        >
+      </article>
 
-    <aside>
-        <h4>ARTICLES</h4>
-        <img src="../../images/image-placeholder.png" alt="image">
-        <p>New bussines-case for the AI industry... <a href="https://www.example.com" target="_blank">read more</a>
-        </p>
-        <h4>WE ARE HIRING!</h4>
-        <p><strong>Java Backend Developer</strong></p>
+      <aside>
+        <h3>Articles</h3>
+        <img src="../../images/image.png" alt="image" />
+        <p>New business-case for the AI industry... <u>read more</u></p>
+
+        <h3>WE ARE HIRING!</h3>
+        <h4>ReactJS Frontend Developer</h4>
         <ul>
-            <li>5+ years of experience</li>
-            <li>B2 English proficiency</li>
-            <li>Solid bases in Java, Spring-Boot, Spring-Core, AWS adn SQL Server</li>
+          <li>5+ years of experience</li>
+          <li>B2 English proficiency</li>
+          <li>Solid bases in JavaScript, ReactJS and Redux</li>
         </ul>
-    </aside>
+      </aside>
+    </main>
 
     <footer>
-        <hr>
-        <small>&copy Copyright My Company 2023</small>
-        <hr>
+      <p>&Copyright My Company 2023</p>
     </footer>
-</body>
-
+  </body>
 </html>

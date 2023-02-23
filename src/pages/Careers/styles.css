@@ -166,8 +166,9 @@ article {
 aside {
   width: auto;
   height: auto;
-  padding: 30px 25px;
+  padding: 20px 25px;
   box-sizing: border-box;
+  border: 1px solid #000000;
 }
 
 aside h3 {

@@ -1,71 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Equipo 3">
-    <meta name="description" content="Tarea evaluativa 2 - Página de contacto">
-    <link rel="stylesheet" href="styles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Equipo 3" />
+    <meta
+      name="description"
+      content="Tarea evaluativa 2 - Página de contacto"
+    />
+    <link rel="stylesheet" href="styles.css" />
     <title>Página de contacto</title>
-</head>
-<header>
-    <img src="../../images/logo.png">
-    <p><strong>My company</strong></p>
-    <nav>
-        <ul>
-            <li><a href="../Home/index.html"><strong>Home</strong></a></li>
-            <li><a href="../Blog/index.html"><strong>Blog</strong></a></li>
-            <li><a href="../Contact/index.html"><strong>Contact us</strong></a></li>
-            <li><a href="../Careers/index.html"><strong>Careers</strong></a></li>
-        </ul>
-    </nav>
-</header>
+  </head>
 
-<body>
-    <img src="../../images/banner-placeholder.jpg" alt="banner">
-    <div>
-        <h3>Contact</h3>
-        <img src="../../images/image-placeholder.png" alt="image">
+  <header>
+    <div class="logo">
+      <img src="../../images/logo.png" />
     </div>
-    <form action="">
+    <h2 class="pageTitle"><strong>My company</strong></h2>
+
+    <div>
+      <nav>
+        <ul class="nav-links">
+          <li>
+            <a href="../Home/index.html"
+              ><strong><u>Home</u></strong></a
+            >
+          </li>
+          <li>
+            <a href="../Blog/index.html"
+              ><strong><u>Blog</u></strong></a
+            >
+          </li>
+          <li>
+            <a href="../Contact/index.html" class="active-tab"
+              ><strong><u>Contact us</u></strong></a
+            >
+          </li>
+          <li>
+            <a href="../Careers/index.html"
+              ><strong><u>Careers</u></strong></a
+            >
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <body>
+    <div class="banner"></div>
+
+    <main class="grid">
+      <div>
+        <h3>Contact</h3>
+        <img src="../../images/image-placeholder.png" alt="image" />
+      </div>
+      <form action="">
         <p>Tell us everything</p>
         <div>
-            <strong><label for="first">First Name</label></strong>
-            <input type="text" id="first" name="firstname" placeholder="Type your name..." required>
+          <strong><label for="first">First Name</label></strong>
+          <input
+            type="text"
+            id="first"
+            name="firstname"
+            placeholder="Type your name..."
+            required
+          />
         </div>
         <div>
-            <strong><label for="last">Last Name</label></strong>
-            <input type="text" id="last" name="lastname" placeholder="Type your lastname..." required>
+          <strong><label for="last">Last Name</label></strong>
+          <input
+            type="text"
+            id="last"
+            name="lastname"
+            placeholder="Type your lastname..."
+            required
+          />
         </div>
         <div>
-            <strong><label for="email">Email</label></strong>
-            <input type="email" id="email" name="email" placeholder="youremail@domain.com" required>
+          <strong><label for="email">Email</label></strong>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="youremail@domain.com"
+            required
+          />
         </div>
         <div>
-            <strong><label for="tel">Cellphone</label></strong>
-            <input type="tel" id="tel" name="telephone" placeholder="+52 XXX XXX XXXX" required>
+          <strong><label for="tel">Cellphone</label></strong>
+          <input
+            type="tel"
+            id="tel"
+            name="telephone"
+            placeholder="+52 XXX XXX XXXX"
+            required
+          />
         </div>
         <div>
-            <strong><label for="category">You want to share...</label></strong>
-            <select name="category" id="category-select" required>
-                <option value="">Select an option</option>
-                <option value=""></option>
-                <option value=""></option>
-                <option value=""></option>
-            </select>
+          <strong><label for="category">You want to share...</label></strong>
+          <select name="category" id="category-select" required>
+            <option value="">Select an option</option>
+            <option value=""></option>
+            <option value=""></option>
+            <option value=""></option>
+          </select>
         </div>
         <div>
-            <strong><label for="comment">Share your thoughts</label></strong>
-            <textarea name="comment" id="comment" cols="20" rows="10" placeholder="Write here"></textarea>
+          <strong><label for="comment">Share your thoughts</label></strong>
+          <textarea
+            name="comment"
+            id="comment"
+            cols="20"
+            rows="10"
+            placeholder="Write here"
+          ></textarea>
         </div>
-    </form>
+      </form>
+    </main>
     <footer>
-        <hr>
-        <small>&copy Copyright My Company 2023</small>
-        <hr>
+      <p>&Copyright My Company 2023</p>
     </footer>
-</body>
-
+  </body>
 </html>
