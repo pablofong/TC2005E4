@@ -109,9 +109,16 @@ h4 {
 
 /* Configuracion del banner */
 .banner {
-  width: auto;
-  height: 267px;
-  background: url("../../images/banner.jpg");
+  background-image: url("../../images/banner.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 200px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 /* Configuracion del contenido de la pagina */

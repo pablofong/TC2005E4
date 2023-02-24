@@ -100,6 +100,7 @@ textarea{
   text-decoration: none;
   transition: all ease-in-out 350ms;
   padding: 5px;
+  color: black;
 }
 
 .nav-links li a:hover {
@@ -107,6 +108,10 @@ textarea{
   background-color: #fff;
   padding: 10px;
   border-radius: 50px;
+}
+
+.nav-links li a:active {
+  color: #f33e3e;
 }
 
 .nav-links li {
@@ -124,9 +129,16 @@ textarea{
 
 /* Configuracion del banner */
 .banner {
-  width: auto;
-  height: 267px;
-  background: url("../../images/banner.jpg");
+    background-image: url("../../images/banner.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 200px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 /* Footer */

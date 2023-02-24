@@ -100,9 +100,16 @@ h4 {
 
 /* Configuracion del banner */
 .banner {
-  width: auto;
-  height: 267px;
-  background: url("../../images/banner.jpg");
+  background-image: url("../../images/banner.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 200px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 /* Configuracion del contenido de la pagina */
@@ -124,7 +131,7 @@ article {
 
 /* Pos de la oferta de trabajo al costado */
 aside {
-  width: auto;
+  width: 100%;
   height: auto;
   padding: 20px 25px;
   box-sizing: border-box;
@@ -137,7 +144,6 @@ aside h3 {
 }
 
 aside img {
-  height: 219px;
   width: auto;
 }
 
