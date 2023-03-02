@@ -72,30 +72,55 @@
     <div class="row flex-nowrap">
       <div class="col-auto col-md-3 col-xl-2 px-sm-2 px-0 bg-dark">
         <div class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 text-white min-vh-100"
-          style="background: #f5f5f5">
+          style="background: white">
           <div class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
             <span class="fs-5 d-none d-sm-inline"><i class="fal fa-solid fa-lock-open">Administración</i></span>
+            
           </div>
           <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start" id="menu">
-            <li class="nav-item">
+            <li class="nav-item bg-danger">
               <a href="../usuarios/index.html" class="nav-link align-middle px-0 hoverinBtn">
-                <i class="fs-4 bi-house"></i>
-                <span class="ms-1 d-none d-sm-inline text-dark">Usuarios</span><i class="fal fa-solid fa-arrow-right"
-                  style="padding: 0px 30px"></i>
+                  <div class="row bg-body-secondary">
+                    <div class="col-2"></div>
+                    <div class="col-8"><span class="ms-1 d-none d-sm-inline text-dark">Usuarios</span></div>
+                    <div class="col-2">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="gray"
+                        class="bi bi-chevron-right" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                          d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                      </svg>
+                    </div>
+                  </div>
               </a>
             </li>
-            <li class="nav-item">
-              <a href="../permisos/index.html" class="nav-link align-middle px-0 hoverinBtn">
-                <i class="fs-4 bi-house"></i>
-                <span class="ms-1 d-none d-sm-inline text-dark">Permisos</span><i class="fal fa-solid fa-arrow-right"
-                  style="padding: 0px 30px"></i>
+            <li class="nav-item bg-danger">
+              <a href="../usuarios/index.html" class="nav-link align-middle px-0 hoverinBtn">
+                  <div class="row bg-body-secondary">
+                    <div class="col-2"></div>
+                    <div class="col-8"><span class="ms-1 d-none d-sm-inline text-dark">Permisos</span></div>
+                    <div class="col-2">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="gray"
+                        class="bi bi-chevron-right" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                          d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                      </svg>
+                    </div>
+                  </div>
               </a>
             </li>
-            <li class="nav-item">
-              <a href="../finanzas/index.html" class="nav-link align-middle px-0 hoverinBtn">
-                <i class="fs-4 bi-house"></i>
-                <span class="ms-1 d-none d-sm-inline text-dark">Finanzas</span><i class="fal fa-solid fa-arrow-right"
-                  style="padding: 0px 30px"></i>
+            <li class="nav-item bg-danger">
+              <a href="../usuarios/index.html" class="nav-link align-middle px-0 hoverinBtn">
+                  <div class="row bg-body-secondary">
+                    <div class="col-2"></div>
+                    <div class="col-8"><span class="ms-1 d-none d-sm-inline text-dark">Finanzas</span></div>
+                    <div class="col-2">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="gray"
+                        class="bi bi-chevron-right" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                          d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                      </svg>
+                    </div>
+                  </div>
               </a>
             </li>
           </ul>
@@ -103,10 +128,12 @@
         </div>
       </div>
       <div class="col py-3" style="background: white">
-        <button type="button" class="btn btn-outline-danger">NUEVO USUARIO</button>
-        <button type="button" class="btn btn-outline-danger">EXPORTAR EXCEL</button>
+        <div class="d-flex justify-content-between">
+          <div class="flex-item"><button type="button" class="btn btn-outline-danger">NUEVO USUARIO</button></div>
+          <div class="flex-item"><button type="button" class="btn btn-outline-danger">EXPORTAR EXCEL</button></div>
+        </div>
         <table class="table">
-          <thead class="bg-light text-dark">
+          <thead class="bg-body-secondary text-dark">
             <th>Nombre(s)</th>
             <th>Apellidos</th>
             <th>Correo electrónico</th>
@@ -120,7 +147,7 @@
             <td>pepe@gmail.com</td>
             <td>Empleado</td>
             <td><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked></td>
-            <td><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+            <td><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="black"
                 class="bi bi-three-dots-vertical" viewBox="0 0 16 16">
                 <path
                   d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z" />
@@ -132,7 +159,7 @@
             <td>pepe@gmail.com</td>
             <td>Revisor</td>
             <td><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked></td>
-            <td><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+            <td><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="black"
                 class="bi bi-three-dots-vertical" viewBox="0 0 16 16">
                 <path
                   d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z" />
@@ -144,7 +171,7 @@
             <td>pepe@gmail.com</td>
             <td>Aprobador</td>
             <td><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"></td>
-            <td><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+            <td><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="black"
                 class="bi bi-three-dots-vertical" viewBox="0 0 16 16">
                 <path
                   d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z" />
@@ -156,7 +183,7 @@
             <td>pepe@gmail.com</td>
             <td>Administrador</td>
             <td><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked></td>
-            <td><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+            <td><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="black"
                 class="bi bi-three-dots-vertical" viewBox="0 0 16 16">
                 <path
                   d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z" />
