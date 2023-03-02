@@ -22,3 +22,23 @@
   width: 100%;
   background-color: lightgray;
 }
+
+.bi {
+  color: white;
+  margin-right: 15px;
+}
+
+.bi:hover{
+  color: lightgray;
+  cursor: pointer;
+
+}
+
+nav small {
+  color: white;
+  margin-right: 40px;
+}
+
+#salir{
+  margin-right: 20px;
+}
