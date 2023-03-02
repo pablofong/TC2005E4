@@ -1,0 +1,165 @@
+/* header,
+body,
+footer,
+aside,
+article,
+.banner {
+  border: 1px black solid;
+} */
+
+/* Configuracion para el header con el logo y navbar */
+header {
+  display: flex;
+  background-color: white;
+  box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2);
+  align-items: center;
+  align-content: center;
+  height: 4rem;
+  border-bottom: 1px solid #b4b0b0;
+}
+
+/* Fonts */
+@font-face {
+  font-family: "Noto-bold";
+  src: url("../../fonts/NotoSerif-Bold.eot");
+  src: url("../../fonts/NotoSerif-Bold.eot") format("embedded-opentype"),
+    url("../../fonts/NotoSerif-Bold.woff2") format("woff2"),
+    url("../../fonts/NotoSerif-Bold.woff") format("woff"),
+    url("../../fonts/NotoSerif-Bold.ttf") format("truetype"),
+    url("../../fonts/NotoSerif-Bold.svg#Noto-bold") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "google-Roboto";
+  src: url("../../fonts/Roboto-Light.eot");
+  src: url("../../fonts/Roboto-Light.eot") format("embedded-opentype"),
+    url("../../fonts/Roboto-Light.woff2") format("woff2"),
+    url("../../fonts/Roboto-Light.woff") format("woff"),
+    url("../../fonts/Roboto-Light.ttf") format("truetype"),
+    url("../../fonts/Roboto-Light.svg#google-Roboto") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Asignar tipo de letra a la pagina */
+head,
+body {
+  font-family: google-Roboto, sans-serif;
+}
+
+h2,
+h3,
+h4 {
+  font-family: Noto-bold, serif;
+}
+
+/* Parte del logo */
+.logo {
+  background-image: url(../../images/logo.png);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+  width: auto;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  margin-left: 2vw;
+}
+
+.logo img {
+  height: auto;
+  width: auto;
+}
+
+/* Color del titulo de pagina */
+.pageTitle {
+  color: #f14764;
+}
+
+/* Configuracion de Links y mini-animacion */
+.nav-links {
+  width: 75vw;
+  display: flex;
+  justify-content: right;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.nav-links li a {
+  margin: 0 0.7vw;
+  text-decoration: none;
+  transition: all ease-in-out 350ms;
+  padding: 5px;
+  color: black;
+}
+
+.nav-links li a:hover {
+  color: #f33e3e;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 50px;
+}
+
+.nav-links li {
+  position: relative;
+}
+
+.nav-links li a:hover::before {
+  width: 80%;
+}
+
+/* Color para la pestaña actual */
+.active-tab {
+  color: #f2526e;
+}
+
+/* Footer */
+footer {
+  background-color: #d9d9d9;
+  padding: 2px 15px;
+}
+
+main h2 {
+  font-family: 'Noto', serif;
+  color:#f2526e;
+  font-size: 30px;
+  margin-bottom: 0;
+}
+
+.date{
+  margin-top: 0;
+}
+
+main p {
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+.blog1 {
+  background-image: url(../../images/blog1.jpg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  width: 100%;
+  height: 180px;
+  padding: 0;
+}
+
+.blog2 {
+  background-image: url(../../images/blog2.jpg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  width: 100%;
+  height: 180px;
+  padding: 0;
+}
