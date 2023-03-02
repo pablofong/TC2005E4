@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Bootstrap Example</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Equipo 3" />
+    <meta name="description" content="Tarea evaluativa 4 - Ventana Admin" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    />
+  </head>
+
+  <header>
+    <nav class="navbar navbar-expand-lg nav-header">
+      <div class="container-fluid">
+        <div style="display: flex">
+          <button
+            class="btn btn-outline-light"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#demo"
+          >
+            <i class="fal fa-stream"> Menu</i>
+          </button>
+          <h3 class="navbar-brand">
+            <strong class="pageTitle text-light px-2"
+              >SISTEMA DE CONTROL Anticipos y Viáticos</strong
+            >
+          </h3>
+        </div>
+
+        <button
+          type="button"
+          class="btn btn-outline-secondary text-light border-white"
+        >
+          Salir
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <body>
+    <!-- Offcanvas menu -->
+    <div class="offcanvas offcanvas-start" id="demo" style="width: 20%">
+      <div class="offcanvas-header">
+        <h2 class="offcanvas-title">Titulo</h2>
+        <button type="button" data-bs-dismiss="offcanvas" style="border: none">
+          <i class="fal fa-stream"></i>
+        </button>
+      </div>
+      <div class="offcanvas-body">
+        <i
+          class="fal fa-globe other_tab btn btn-outline-secondary"
+          style="padding: 10px 10px"
+          ><a href="#" style="text-decoration: none; color: black">
+            Dashboard</a
+          ></i
+        >
+        <br />
+        <i
+          class="fal fa-solid fa-briefcase other_tab btn btn-outline-secondary"
+          style="padding: 10px 10px"
+          ><a href="#" style="text-decoration: none; color: black">
+            Mis Viáticos</a
+          ></i
+        >
+        <br />
+        <i
+          class="fal fa-solid fa-lock-open active_tab btn btn-outline-danger"
+          style="padding: 10px 10px"
+          ><a href="#" style="text-decoration: none; color: black">
+            Administración</a
+          ></i
+        >
+      </div>
+    </div>
+
+    <!-- Menu lateral estatico -->
+    <div class="container-fluid">
+      <div class="row flex-nowrap">
+        <div class="col-auto col-md-3 col-xl-2 px-sm-2 px-0 bg-dark">
+          <div
+            class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 text-white min-vh-100"
+            style="background: #f5f5f5"
+          >
+            <div
+              class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-dark text-decoration-none"
+            >
+              <span class="fs-5 d-none d-sm-inline"
+                ><i class="fal fa-solid fa-lock-open">Administración</i></span
+              >
+            </div>
+            <ul
+              class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start"
+              id="menu"
+            >
+              <li class="nav-item">
+                <a href="#" class="nav-link align-middle px-0 hoverinBtn">
+                  <i class="fs-4 bi-house"></i>
+                  <span class="ms-1 d-none d-sm-inline text-dark">Usuarios</span
+                  ><i
+                    class="fal fa-solid fa-arrow-right"
+                    style="padding: 0px 30px"
+                  ></i>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link align-middle px-0 hoverinBtn">
+                  <i class="fs-4 bi-house"></i>
+                  <span class="ms-1 d-none d-sm-inline text-dark">Permisos</span
+                  ><i
+                    class="fal fa-solid fa-arrow-right"
+                    style="padding: 0px 30px"
+                  ></i>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link align-middle px-0 hoverinBtn">
+                  <i class="fs-4 bi-house"></i>
+                  <span class="ms-1 d-none d-sm-inline text-dark">Finanzas</span
+                  ><i
+                    class="fal fa-solid fa-arrow-right"
+                    style="padding: 0px 30px"
+                  ></i>
+                </a>
+              </li>
+            </ul>
+            <hr />
+          </div>
+        </div>
+        <div class="col py-3" style="background: grey">
+          Aqui va el resto de cosas
+        </div>
+      </div>
+      <footer class="bg-light text-center text-lg-start">
+        <div class="text-left p-3" style="background-color: #d9d9d9">
+          &Copyright My Company 2023
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
