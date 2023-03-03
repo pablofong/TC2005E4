@@ -3,7 +3,7 @@
 } */
 
 .nav-header {
-  background-color: #f14764;
+  background-color: #DC3545;
   width: 100%;
 }
 
@@ -45,4 +45,8 @@ nav small {
 .form-check-input:checked {
   background-color: blueviolet;
   border-color: blueviolet;
+}
+
+.btn {
+  margin-bottom: 10px;
 }
