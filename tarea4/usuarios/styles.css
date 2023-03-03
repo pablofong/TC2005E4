@@ -50,3 +50,14 @@ nav small {
 .btn {
   margin-bottom: 10px;
 }
+
+.navitem {
+  padding: auto;
+}
+
+.nav-body {
+  margin-bottom: 10px;
+  padding-bottom: 50px;
+  background-color: #e9e7e7;
+  width: 100%;
+}
