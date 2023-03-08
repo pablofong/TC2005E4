@@ -1,3 +1,7 @@
+/* General */
+*{
+    font-family: 'inter', sans-serif;
+}
 
 /* Navbar */
 .navbar{
@@ -54,11 +58,32 @@
 }
 
 
-/* Table */
+/* Main */
 #theader{
     border-bottom: 1px solid #CED4DA;
 }
 
+#btnbody{
+    color:#7749F8;
+    border-color: #7749F8;
+}
+
+#btnbody:hover{
+    color:#fff;
+    border-color: #7749F8;
+    background-color: #7749F8;
+}
+
+#btnbody:active{
+    color:#fff;
+    border-color: #7749F8;
+    background-color: #7749F8;
+}
+
 .table{
     border-top: 1px solid #CED4DA;
+}
+
+.cen{
+    text-align: center;
 }
