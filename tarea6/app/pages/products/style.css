@@ -61,6 +61,10 @@
 /* Main */
 #theader{
     border-bottom: 1px solid #CED4DA;
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 12px;
+    box-sizing: content-box;
 }
 
 #btnbody{
@@ -86,4 +90,12 @@
 
 .cen{
     text-align: center;
+}
+
+.pen{
+    color: #7749F8;
+}
+
+.trash{
+    color: #7749F8;
 }
