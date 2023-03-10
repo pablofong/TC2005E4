@@ -11,4 +11,5 @@ Router.map(function () {
   this.route('shop');
   this.route('checkout');
   this.route('login');
+  this.route('not-found', { path: '/*path' });
 });
