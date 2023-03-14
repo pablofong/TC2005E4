@@ -10,6 +10,6 @@ Router.map(function () {
   this.route('products');
   this.route('shop');
   this.route('checkout');
-  this.route('login');
+  this.route('login', { path: '/login' });
   this.route('not-found', { path: '/*path' });
 });
