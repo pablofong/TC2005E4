@@ -1,100 +1,150 @@
 /* General */
-* {
-  font-family: "inter", sans-serif;
+*{
+  font-family: 'inter', sans-serif;
 }
 
 /* Navbar */
-.navbar {
-  background-color: #7749f8;
+.navbar{
+  background-color: #7749F8;
 }
 
-.navbar-brand {
+.navbar-brand{
   color: #fff;
 }
 
-.navbar-brand:hover {
+.navbar-brand:hover{
   color: #fff;
 }
 
-.navbar-brand:active {
+.navbar-brand:active{
   color: #fff;
 }
 
-.navbar-brand:visited {
+.navbar-brand:visited{
   color: #fff;
 }
 
-.nav-link {
+.nav-link{
   color: #fff;
 }
 
-.nav-link:hover {
+.nav-link:hover{
   color: #fff;
 }
 
-.nav-link:active {
+.nav-link:active{
   color: #fff;
 }
 
-.nav-link:visited {
+.nav-link:visited{
   color: #fff;
 }
 
-#btn {
+#btn{
   color: #fff;
   border-color: #fff;
 }
 
-#btn:hover {
-  color: #7749f8;
+#btn:hover{
+  color: #7749F8;
+  border-color: #fff;
+  background-color: #fff;
+}
+
+#btn:active{
+  color: #7749F8;
   border-color: #fff;
   background-color: #fff;
 }
 
-#btn:active {
-  color: #7749f8;
-  border-color: #fff;
-  background-color: #fff;
-}
 
 /* Main */
-#theader {
-  border-bottom: 1px solid #ced4da;
+#theader{
+  border-bottom: 1px solid #CED4DA;
   padding-left: 0;
   padding-right: 0;
   margin-left: 12px;
   box-sizing: content-box;
 }
 
-#btnbody {
-  color: #7749f8;
-  border-color: #7749f8;
+#btnbody{
+  color:#7749F8;
+  border-color: #7749F8;
 }
 
-#btnbody:hover {
-  color: #fff;
-  border-color: #7749f8;
-  background-color: #7749f8;
+#btnbody:hover{
+  color:#fff;
+  border-color: #7749F8;
+  background-color: #7749F8;
 }
 
-#btnbody:active {
-  color: #fff;
-  border-color: #7749f8;
-  background-color: #7749f8;
+#btnbody:active{
+  color:#fff;
+  border-color: #7749F8;
+  background-color: #7749F8;
 }
 
-.table {
-  border-top: 1px solid #ced4da;
+.table{
+  border-top: 1px solid #CED4DA;
 }
 
-.cen {
+.cen{
   text-align: center;
 }
 
-.pen {
-  color: #7749f8;
+.pen{
+  color: #7749F8;
+  background: none;
+  border: none;
 }
 
-.trash {
-  color: #7749f8;
+.pen:hover{
+  color: black;
+  background: none;
+  border: none;
+}
+
+.trash{
+  color: #7749F8;
+  background: none;
+  border: none;
+}
+
+.trash:hover{
+  color: black;
+  background: none;
+  border: none;
+}
+
+
+/* Delete */
+#delete-confirmation {
+  position: fixed;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  border-radius: 10px;
+}
+
+#cancel-delete{
+  background-color: gray;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+#confirm-delete{
+  background-color: #7749F8;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+*.gray {
+  background-color: #cfcfcf;
+}
+
+.hidden {
+  display: none;
 }

@@ -1,0 +1,36 @@
+[
+    {
+        "id": "COS01",
+        "type": "Cosmetic",
+        "name": "Sephora Skin Care - 1 u",
+        "price": "$45.50",
+        "instock": "4",
+        "image": "",
+        "edit": "",
+        "delete": ""
+    },
+    
+    {
+        "id": "CLE02",
+        "type": "Cleaning",
+        "name": "Windex - 45 oz",
+        "price": "$23.00",
+        "instock": "23",
+        "image": "",
+        "edit": "",
+        "delete": ""
+    },
+    
+    {
+        "id": "BEA03",
+        "type": "Beauty",
+        "name": "Sephora Skin Care - 1 u",
+        "price": "$12.60",
+        "instock": "12",
+        "image": "",
+        "edit": "",
+        "delete": ""
+    }
+]
+    
+    
