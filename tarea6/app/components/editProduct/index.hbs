@@ -1,0 +1,77 @@
+<div class="container">
+  <div class="row">
+    <div class="col-12 my-3 pb-3" id="theader">
+      <h1>Edit Product</h1>
+    </div>
+  </div>
+  <form class="row g-3 py-3 px-5" id="theader" onsubmit="return false">
+    <div class="col-md-3">
+      <label for="image" class="form-label">Image </label>
+      <div class="col-md-12">
+        <img id="preview-image" src="#" alt="Preview Image" style="max-width: 200px;">
+        <div class="input-group">
+          <br>
+          {{!-- <input type="text" class="form-control" id="inputGroupFile02"> --}}
+          <input type="file" id="product-image" accept="image/*" placeholder="Select file from local drive">
+          <span class="input-group-text" id="">Upload</span>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-9">
+      <div class="row">
+        <div class="col-md-6">
+          <label for="id" class="form-label">ID</label>
+          <input type="text" class="form-control" id="product-id" required>
+        </div>
+        <div class="col-md-6">
+          <label for="type" class="form-label">Type</label>
+          <select type="text" class="form-control" id="product-type" required>
+            <option value="Cosmetic">Cosmetic</option>
+            <option value="Cleaning">Cleaning</option>
+            <option value="Beauty">Beauty</option>
+          </select>
+        </div>
+      </div>
+      <div class="col-md-12 mt-4">
+        <label for="name" class="form-label">Name</label>
+        <input type="text" class="form-control" id="product-name" required>
+      </div>
+      <div class="row mt-4">
+        <div class="col-md-6">
+          <label for="price" class="form-label">Price</label>
+          <div class="input-group">
+            <input type="text" class="form-control" id="product-price" required>
+            <span class="input-group-text">USD</span>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <label for="stock" class="form-label">In Stock</label>
+          <input type="text" class="form-control" id="product-stock" required>
+        </div>
+      </div>
+    </div>
+
+  </form>
+  <div class="d-flex justify-content-end m-5">
+    <button type="button" class="btn btn-secondary me-4">CANCEL</button>
+    <button type="button" class="btn" id="createbutton">UPDATE</button>
+  </div>
+
+
+</div>
+
+<script>
+  const imageInput = document.getElementById('product-image');
+  const previewImage = document.getElementById('preview-image');
+
+  imageInput.addEventListener('change', function () {
+    const file = imageInput.files[0];
+    const reader = new FileReader();
+
+    reader.onload = function (event) {
+      previewImage.src = event.target.result;
+    };
+
+    reader.readAsDataURL(file);
+  });
+</script>
